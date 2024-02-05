@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aditya Weather Assignment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_turn_on_your_gps">Please turn on your GPS</string>
+    <string name="please_check_you_internet_connection">Please check you internet connection</string>
+    <string name="today">Today</string>
+    <string name="history">History</string>
+    <string name="default_weather_icon">01d</string>
+    <string name="please_provide_required_permission">Please provide required permission</string>
+    <string name="something_went_wrong">Something went wrong</string>
+</resources>
