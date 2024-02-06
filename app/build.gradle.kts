@@ -23,7 +23,8 @@ android {
     buildTypes {
         release {
             isDebuggable = false
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             buildConfigField("String", "BASE_URL", "\"https://api.openweathermap.org/data/2.5/\"")
             buildConfigField("String", "BASE_URL_ICON", "\"https://openweathermap.org/img/wn/\"")
             buildConfigField("String", "DB_PASS", "\"\"")
@@ -35,6 +36,8 @@ android {
         }
         debug {
             isDebuggable = true
+            isMinifyEnabled = false
+            isShrinkResources = false
             buildConfigField ("Boolean", "IS_DEBUG", "true")
             buildConfigField("String", "BASE_URL", "\"https://api.openweathermap.org/data/2.5/\"")
             buildConfigField("String", "BASE_URL_ICON", "\"https://openweathermap.org/img/wn/\"")
@@ -70,9 +73,9 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
-    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.4.0")
 
     //Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")

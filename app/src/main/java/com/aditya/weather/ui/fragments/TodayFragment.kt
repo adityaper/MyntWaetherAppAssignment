@@ -26,7 +26,6 @@ import com.bumptech.glide.Glide
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import dagger.hilt.android.AndroidEntryPoint
-//import com.aditya.weather.BuildConfig
 
 @AndroidEntryPoint
 class TodayFragment : Fragment() {
@@ -81,7 +80,6 @@ class TodayFragment : Fragment() {
             arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
             CommonUtils.GPS_REQUEST_CODE
         )
-        Log.d("TEST", "onRequestPermissionsResult 1 --> ${CommonUtils.GPS_REQUEST_CODE}")
     }
 
     override fun onRequestPermissionsResult(
@@ -89,7 +87,6 @@ class TodayFragment : Fragment() {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        Log.d("TEST", "onRequestPermissionsResult --> ${CommonUtils.GPS_REQUEST_CODE}")
         if (requestCode == CommonUtils.GPS_REQUEST_CODE){
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 getLocationData()
