@@ -64,32 +64,32 @@ App build.gradle -> DB_PASS
 
 **App Screens:**
 
-**Splash Screen -**
+**Splash Screen**
 
 ![Splash Screen](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/6d58f463-8446-4888-be91-e6fb0f17e6d9)
 
 
-**Login Screen -**
+**Login Screen**
 
 ![Login Screen](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/1c0215af-85e9-46c0-a0ec-5ffc04aa6bfe)
 
 
-**SignUp screen - **
+**SignUp screen**
 
 ![SignUp Screen](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/ce16c5fa-b5c7-433b-ba0b-2fb4538fb61b)
 
 
-**Home Screen(Current Weather) - **
+**Home Screen(Current Weather)**
 
 ![Home Screen(Current Weather)](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/d8c857a1-fad1-4d59-b9d5-6e49f2c1f1a0)
 
 
-**Home Screen(List of History) - **
+**Home Screen(List of History)**
 
 ![Home Screen(List of History)](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/a9cb037d-7ee0-445f-b0a7-fe3d73bed2eb)
 
 
-**Permission Dialog - **
+**Permission Dialog**
 
 ![Permission Dialog](https://github.com/adityaper/MyntWaetherAppAssignment/assets/131134693/84ccb593-7d46-47b4-a098-c4c5501a6456)
 
