@@ -51,6 +51,17 @@ class WeatherViewModelTest {
     }
 
     @Test
+    fun getWeatherDataNullResponse() = runTest {
+        val weatherResponse = null
+        Mockito.`when`(weatherRepository.getWeatherDataRemote(0.00, 0.00, "abc"))
+            .thenReturn(weatherResponse)
+        weatherViewModel.getWeatherDataRemote(0.00, 0.00, "abc")
+        testDispatcher.scheduler.advanceUntilIdle()
+        val result = weatherViewModel.weatherData.getOrAwaitValue()
+        Assert.assertTrue(result is Resource.Error)
+    }
+
+    @Test
     fun getWeatherHistory() = runTest {
         val weatherResponse = null
         Mockito.`when`(weatherRepository.getWeatherHistory()).thenReturn(weatherResponse)
